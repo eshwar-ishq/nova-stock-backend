@@ -31,7 +31,7 @@ app.listen(PORT, () => {
 
 const sql_query = 'select * from stockandmanagement.Inventory';
 
-app.get('/allpmcstocks', (req, res) => {
+app.get('/allpmcstocks  ', (req, res) => {
     let page = Number(req.query.page) ;
     let limit = Number(req.query.limit) ;
     let offset = (page - 1) * limit;
